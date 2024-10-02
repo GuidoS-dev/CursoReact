@@ -1,8 +1,12 @@
+import Layout from "../../Components/Layout";
+import Card from "../../Components/Card";
+
 function Home() {
   return (
-    <>
-      <h1 className="bg-black  text-white text-center p-5 ">Home</h1>
-    </>
+    <Layout>
+      Home
+      <Card />
+    </Layout>
   );
 }
 

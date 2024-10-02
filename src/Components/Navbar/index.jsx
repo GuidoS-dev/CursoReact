@@ -1,17 +1,12 @@
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
-  const activeStyle = "underline";
+  const activeStyle = "underline underline-offset-4";
 
   return (
-    <nav className="w-full flex justify-between items-center fixed z-10 py-5 px-8 text-sm font-light">
+    <nav className="w-full flex justify-between items-center fixed top-0 z-10 py-5 px-8 text-sm font-light">
       <ul className="flex items-center gap-3">
         <li className="font-semibold text-lg">
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? activeStyle : undefined)}
-          >
-            Shopi
-          </NavLink>
+          <NavLink to="/">Shopi</NavLink>
         </li>
         <li>
           <NavLink
@@ -63,7 +58,7 @@ const Navbar = () => {
         </li>
       </ul>
       <ul className="flex items-center gap-3">
-        <li>guido?solinba@hotmail.com</li>
+        <li className="text-black/60">guido_solinba@hotmail.com</li>
         <li>
           <NavLink
             to="/my-orders"
